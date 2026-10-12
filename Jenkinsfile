@@ -1,18 +1,7 @@
 pipeline {
-    agent any
-    stages {
-        stage('Hello') {
-            steps {
-                echo 'pepk'
-            }
-        }
-    }
-}
-
-pipeline {
   agent any
   environment {
-    IMAGE_NAME = 'kzeoooo/simple-app'
+    IMAGE_NAME = 'youruser/simple-app'
     REGISTRY_CREDENTIALS = 'dockerhub-credentials'
   }
   stages {
